@@ -1,0 +1,191 @@
+{
+  "uuid": "d0c18cf9-17cc-456b-9b62-1d7d95449767",
+  "name": "Middle intermediate IT layer",
+  "classes": [
+    {
+      "uuid": "12361a3b-b560-432f-bdaa-49fee322bf6d",
+      "name": "Device",
+      "is_reusable": true,
+      "is_abstract": false,
+      "attributes": [
+        {
+          "uuid": "7d3c4c5e-68e5-4b6a-96be-2f3f34ad392a",
+          "name": "Name",
+          "multi_valued": false,
+          "description": "The name of the element",
+          "creation_time": "2023-04-05T08:16:28.938Z",
+          "modification_time": "2023-04-05T09:30:53.421Z",
+          "geometry": "",
+          "coordinates_2d": null,
+          "relative_coordinate_3d": null,
+          "absolute_coordinate_3d": null,
+          "uuid_metaobject": "7d3c4c5e-68e5-4b6a-96be-2f3f34ad392a",
+          "attribute_type_uuid": "b68350c4-4e1e-48b1-b10e-7bfffec0654e",
+          "attribute_type": {
+            "uuid": "b68350c4-4e1e-48b1-b10e-7bfffec0654e",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "default_value": "",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "",
+            "creation_time": "2023-04-05T08:16:28.940Z",
+            "modification_time": "2023-04-05T09:30:53.425Z",
+            "geometry": "",
+            "coordinates_2d": null,
+            "relative_coordinate_3d": null,
+            "absolute_coordinate_3d": null,
+            "uuid_metaobject": "b68350c4-4e1e-48b1-b10e-7bfffec0654e"
+          }
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": "A device of an IT infrastructure",
+      "creation_time": "2023-04-05T08:16:28.934Z",
+      "modification_time": "2023-04-05T08:16:28.983Z",
+      "geometry": " async function vizRep(gc){ await gc.setVariable('name', await gc.dynval('7d3c4c5e-68e5-4b6a-96be-2f3f34ad392a', await gc.get_current_class_instance_uuid()), false); await gc.setVariable('x_rel', -0.4, true); await gc.setVariable('y_rel', 0.1, true); await gc.setVariable('z_rel', -0.05, true); let map= 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZGlhZ3JhbXMubmV0IC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgd2lkdGg9IjgxcHgiIGhlaWdodD0iNjZweCIgdmlld0JveD0iLTAuNSAtMC41IDgxIDY2IiBjb250ZW50PSImbHQ7bXhmaWxlIGhvc3Q9JnF1b3Q7YXBwLmRpYWdyYW1zLm5ldCZxdW90OyBtb2RpZmllZD0mcXVvdDsyMDIzLTAzLTMxVDE0OjI4OjM5LjgwNlomcXVvdDsgYWdlbnQ9JnF1b3Q7TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NDsgcnY6MTA5LjApIEdlY2tvLzIwMTAwMTAxIEZpcmVmb3gvMTExLjAmcXVvdDsgZXRhZz0mcXVvdDtJUHJBbG9hQUZjTXZ5WWtUOG1WNiZxdW90OyB2ZXJzaW9uPSZxdW90OzIxLjEuMiZxdW90OyB0eXBlPSZxdW90O2RldmljZSZxdW90OyZndDsmI3hBOyAgJmx0O2RpYWdyYW0gbmFtZT0mcXVvdDtQYWdlLTEmcXVvdDsgaWQ9JnF1b3Q7eFNGRE9yVXJVY3RHNFlxd0FyVmEmcXVvdDsmZ3Q7JiN4QTsgICAgJmx0O214R3JhcGhNb2RlbCBkeD0mcXVvdDsxNDM0JnF1b3Q7IGR5PSZxdW90OzcwNiZxdW90OyBncmlkPSZxdW90OzEmcXVvdDsgZ3JpZFNpemU9JnF1b3Q7MTAmcXVvdDsgZ3VpZGVzPSZxdW90OzEmcXVvdDsgdG9vbHRpcHM9JnF1b3Q7MSZxdW90OyBjb25uZWN0PSZxdW90OzEmcXVvdDsgYXJyb3dzPSZxdW90OzEmcXVvdDsgZm9sZD0mcXVvdDsxJnF1b3Q7IHBhZ2U9JnF1b3Q7MSZxdW90OyBwYWdlU2NhbGU9JnF1b3Q7MSZxdW90OyBwYWdlV2lkdGg9JnF1b3Q7ODI3JnF1b3Q7IHBhZ2VIZWlnaHQ9JnF1b3Q7MTE2OSZxdW90OyBtYXRoPSZxdW90OzAmcXVvdDsgc2hhZG93PSZxdW90OzAmcXVvdDsmZ3Q7JiN4QTsgICAgICAmbHQ7cm9vdCZndDsmI3hBOyAgICAgICAgJmx0O214Q2VsbCBpZD0mcXVvdDswJnF1b3Q7IC8mZ3Q7JiN4QTsgICAgICAgICZsdDtteENlbGwgaWQ9JnF1b3Q7MSZxdW90OyBwYXJlbnQ9JnF1b3Q7MCZxdW90OyAvJmd0OyYjeEE7ICAgICAgICAmbHQ7bXhDZWxsIGlkPSZxdW90O2VWM3NIUWRBN0ZIcFRPOVd2NG9RLTEmcXVvdDsgdmFsdWU9JnF1b3Q7JnF1b3Q7IHN0eWxlPSZxdW90O2h0bWw9MTtvdXRsaW5lQ29ubmVjdD0wO3doaXRlU3BhY2U9d3JhcDtmaWxsQ29sb3I9I0ZGRkZGRjtzaGFwZT1teGdyYXBoLmFyY2hpbWF0ZTMuZGV2aWNlOyZxdW90OyB2ZXJ0ZXg9JnF1b3Q7MSZxdW90OyBwYXJlbnQ9JnF1b3Q7MSZxdW90OyZndDsmI3hBOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSB4PSZxdW90OzIxMCZxdW90OyB5PSZxdW90OzM0MCZxdW90OyB3aWR0aD0mcXVvdDs4MCZxdW90OyBoZWlnaHQ9JnF1b3Q7NjUmcXVvdDsgYXM9JnF1b3Q7Z2VvbWV0cnkmcXVvdDsgLyZndDsmI3hBOyAgICAgICAgJmx0Oy9teENlbGwmZ3Q7JiN4QTsgICAgICAmbHQ7L3Jvb3QmZ3Q7JiN4QTsgICAgJmx0Oy9teEdyYXBoTW9kZWwmZ3Q7JiN4QTsgICZsdDsvZGlhZ3JhbSZndDsmI3hBOyZsdDsvbXhmaWxlJmd0OyYjeEE7Ij48ZGVmcy8+PGc+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjU3LjIiIHJ4PSI4IiByeT0iNi41IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9InJnYigwLCAwLCAwKSIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxwYXRoIGQ9Ik0gOCA1Ny4yIEwgMCA2NSBMIDgwIDY1IEwgNzIgNTcuMiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSJyZ2IoMCwgMCwgMCkiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjwvZz48L3N2Zz4='; let icon = map; await gc.graphic_cube(1, 0.8, 0.02, 'lightgrey', map); await gc.graphic_text(await gc.getVariableValue('x_rel'), await gc.getVariableValue('y_rel'), await gc.getVariableValue('z_rel'), 0.15, 'black', await gc.getVariableValue('name'), 'x_rel', 'y_rel', 'z_rel'); }",
+      "coordinates_2d": null,
+      "relative_coordinate_3d": null,
+      "absolute_coordinate_3d": null,
+      "uuid_metaobject": "12361a3b-b560-432f-bdaa-49fee322bf6d"
+    },
+    {
+      "uuid": "82e20f7a-a827-4f00-9378-e785750de868",
+      "name": "Wall",
+      "is_reusable": true,
+      "is_abstract": false,
+      "attributes": [
+        {
+          "uuid": "7d3c4c5e-68e5-4b6a-96be-2f3f34ad392a",
+          "name": "Name",
+          "multi_valued": false,
+          "description": "The name of the element",
+          "creation_time": "2023-04-05T08:16:28.938Z",
+          "modification_time": "2023-04-05T09:30:53.421Z",
+          "geometry": "",
+          "coordinates_2d": null,
+          "relative_coordinate_3d": null,
+          "absolute_coordinate_3d": null,
+          "uuid_metaobject": "7d3c4c5e-68e5-4b6a-96be-2f3f34ad392a",
+          "attribute_type_uuid": "b68350c4-4e1e-48b1-b10e-7bfffec0654e",
+          "attribute_type": {
+            "uuid": "b68350c4-4e1e-48b1-b10e-7bfffec0654e",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "default_value": "",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "",
+            "creation_time": "2023-04-05T08:16:28.940Z",
+            "modification_time": "2023-04-05T09:30:53.425Z",
+            "geometry": "",
+            "coordinates_2d": null,
+            "relative_coordinate_3d": null,
+            "absolute_coordinate_3d": null,
+            "uuid_metaobject": "b68350c4-4e1e-48b1-b10e-7bfffec0654e"
+          }
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": "A wall element of an IT infrastructure representing power supply or/and internet access",
+      "creation_time": "2023-04-05T08:17:14.965Z",
+      "modification_time": "2023-04-05T08:17:14.986Z",
+      "geometry": " async function vizRep(gc){ await gc.setVariable('name', await gc.dynval('7d3c4c5e-68e5-4b6a-96be-2f3f34ad392a', await gc.get_current_class_instance_uuid()), false); await gc.setVariable('x_rel', -0.4, true); await gc.setVariable('y_rel', 0.1, true); await gc.setVariable('z_rel', -0.05, true); let map= 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZGlhZ3JhbXMubmV0IC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgd2lkdGg9Ijc1cHgiIGhlaWdodD0iNTFweCIgdmlld0JveD0iLTAuNSAtMC41IDc1IDUxIiBjb250ZW50PSImbHQ7bXhmaWxlIGhvc3Q9JnF1b3Q7YXBwLmRpYWdyYW1zLm5ldCZxdW90OyBtb2RpZmllZD0mcXVvdDsyMDIzLTAzLTMxVDE0OjU5OjI3LjQzNVomcXVvdDsgYWdlbnQ9JnF1b3Q7TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NDsgcnY6MTA5LjApIEdlY2tvLzIwMTAwMTAxIEZpcmVmb3gvMTExLjAmcXVvdDsgZXRhZz0mcXVvdDthdkZwQ2FiUW5lTWRGUHc4SXpvUiZxdW90OyB2ZXJzaW9uPSZxdW90OzIxLjEuMiZxdW90OyB0eXBlPSZxdW90O2RldmljZSZxdW90OyZndDsmI3hBOyAgJmx0O2RpYWdyYW0gbmFtZT0mcXVvdDtQYWdlLTEmcXVvdDsgaWQ9JnF1b3Q7a2F1Z3A5TTJPQXg4Wm9ZS3Vsa3AmcXVvdDsmZ3Q7JiN4QTsgICAgJmx0O214R3JhcGhNb2RlbCBkeD0mcXVvdDs0NzImcXVvdDsgZHk9JnF1b3Q7NzA1JnF1b3Q7IGdyaWQ9JnF1b3Q7MSZxdW90OyBncmlkU2l6ZT0mcXVvdDsxMCZxdW90OyBndWlkZXM9JnF1b3Q7MSZxdW90OyB0b29sdGlwcz0mcXVvdDsxJnF1b3Q7IGNvbm5lY3Q9JnF1b3Q7MSZxdW90OyBhcnJvd3M9JnF1b3Q7MSZxdW90OyBmb2xkPSZxdW90OzEmcXVvdDsgcGFnZT0mcXVvdDsxJnF1b3Q7IHBhZ2VTY2FsZT0mcXVvdDsxJnF1b3Q7IHBhZ2VXaWR0aD0mcXVvdDs4MjcmcXVvdDsgcGFnZUhlaWdodD0mcXVvdDsxMTY5JnF1b3Q7IG1hdGg9JnF1b3Q7MCZxdW90OyBzaGFkb3c9JnF1b3Q7MCZxdW90OyZndDsmI3hBOyAgICAgICZsdDtyb290Jmd0OyYjeEE7ICAgICAgICAmbHQ7bXhDZWxsIGlkPSZxdW90OzAmcXVvdDsgLyZndDsmI3hBOyAgICAgICAgJmx0O214Q2VsbCBpZD0mcXVvdDsxJnF1b3Q7IHBhcmVudD0mcXVvdDswJnF1b3Q7IC8mZ3Q7JiN4QTsgICAgICAgICZsdDtteENlbGwgaWQ9JnF1b3Q7b3V0Vl96djhXQ3dLTlN1NTdLNDAtNiZxdW90OyB2YWx1ZT0mcXVvdDsmcXVvdDsgc3R5bGU9JnF1b3Q7cm91bmRlZD0wO3doaXRlU3BhY2U9d3JhcDtodG1sPTE7JnF1b3Q7IHBhcmVudD0mcXVvdDsxJnF1b3Q7IHZlcnRleD0mcXVvdDsxJnF1b3Q7Jmd0OyYjeEE7ICAgICAgICAgICZsdDtteEdlb21ldHJ5IHg9JnF1b3Q7MjAwJnF1b3Q7IHk9JnF1b3Q7MzAmcXVvdDsgd2lkdGg9JnF1b3Q7NzMuMzgmcXVvdDsgaGVpZ2h0PSZxdW90OzUwJnF1b3Q7IGFzPSZxdW90O2dlb21ldHJ5JnF1b3Q7IC8mZ3Q7JiN4QTsgICAgICAgICZsdDsvbXhDZWxsJmd0OyYjeEE7ICAgICAgJmx0Oy9yb290Jmd0OyYjeEE7ICAgICZsdDsvbXhHcmFwaE1vZGVsJmd0OyYjeEE7ICAmbHQ7L2RpYWdyYW0mZ3Q7JiN4QTsmbHQ7L214ZmlsZSZndDsmI3hBOyI+PGRlZnMvPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI3My4zOCIgaGVpZ2h0PSI1MCIgZmlsbD0icmdiKDI1NSwgMjU1LCAyNTUpIiBzdHJva2U9InJnYigwLCAwLCAwKSIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjwvZz48L3N2Zz4='; let icon = map; await gc.graphic_cube(1, 0.7, 0.02, 'lightgrey', map); await gc.graphic_text(await gc.getVariableValue('x_rel'), await gc.getVariableValue('y_rel'), await gc.getVariableValue('z_rel'), 0.15, 'black', await gc.getVariableValue('name'), 'x_rel', 'y_rel', 'z_rel'); }",
+      "coordinates_2d": null,
+      "relative_coordinate_3d": null,
+      "absolute_coordinate_3d": null,
+      "uuid_metaobject": "82e20f7a-a827-4f00-9378-e785750de868"
+    },
+    {
+      "uuid": "7c35d2a8-6c4c-4b31-9c6e-275a239d5188",
+      "name": "Intermediate layer bendpoint",
+      "is_reusable": true,
+      "is_abstract": true,
+      "attributes": [],
+      "class_references": [],
+      "ports": [],
+      "description": "Element that allows to connect elements with relationclasses indirectly",
+      "creation_time": "2023-04-05T08:16:29.043Z",
+      "modification_time": "2023-04-05T08:33:55.404Z",
+      "geometry": "async function vizRep(gc) { await gc.graphic_sphere(0.05, 10, 10, 'black'); let icon = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZGlhZ3JhbXMubmV0IC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgd2lkdGg9IjIxcHgiIGhlaWdodD0iMjFweCIgdmlld0JveD0iLTAuNSAtMC41IDIxIDIxIiBjb250ZW50PSImbHQ7bXhmaWxlIGhvc3Q9JnF1b3Q7YXBwLmRpYWdyYW1zLm5ldCZxdW90OyBtb2RpZmllZD0mcXVvdDsyMDIzLTA0LTAzVDA4OjA5OjAyLjcwOVomcXVvdDsgYWdlbnQ9JnF1b3Q7TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NDsgcnY6MTA5LjApIEdlY2tvLzIwMTAwMTAxIEZpcmVmb3gvMTExLjAmcXVvdDsgZXRhZz0mcXVvdDtJVmwxVWtPVWIxWHd2alNTQkhEUSZxdW90OyB2ZXJzaW9uPSZxdW90OzIxLjEuMiZxdW90OyB0eXBlPSZxdW90O2RldmljZSZxdW90OyZndDsmI3hBOyAgJmx0O2RpYWdyYW0gbmFtZT0mcXVvdDtQYWdlLTEmcXVvdDsgaWQ9JnF1b3Q7WmF2WmFVR0tkZENMaWc3b1czQjUmcXVvdDsmZ3Q7JiN4QTsgICAgJmx0O214R3JhcGhNb2RlbCBkeD0mcXVvdDs0NzImcXVvdDsgZHk9JnF1b3Q7NzA1JnF1b3Q7IGdyaWQ9JnF1b3Q7MSZxdW90OyBncmlkU2l6ZT0mcXVvdDsxMCZxdW90OyBndWlkZXM9JnF1b3Q7MSZxdW90OyB0b29sdGlwcz0mcXVvdDsxJnF1b3Q7IGNvbm5lY3Q9JnF1b3Q7MSZxdW90OyBhcnJvd3M9JnF1b3Q7MSZxdW90OyBmb2xkPSZxdW90OzEmcXVvdDsgcGFnZT0mcXVvdDsxJnF1b3Q7IHBhZ2VTY2FsZT0mcXVvdDsxJnF1b3Q7IHBhZ2VXaWR0aD0mcXVvdDs4MjcmcXVvdDsgcGFnZUhlaWdodD0mcXVvdDsxMTY5JnF1b3Q7IG1hdGg9JnF1b3Q7MCZxdW90OyBzaGFkb3c9JnF1b3Q7MCZxdW90OyZndDsmI3hBOyAgICAgICZsdDtyb290Jmd0OyYjeEE7ICAgICAgICAmbHQ7bXhDZWxsIGlkPSZxdW90OzAmcXVvdDsgLyZndDsmI3hBOyAgICAgICAgJmx0O214Q2VsbCBpZD0mcXVvdDsxJnF1b3Q7IHBhcmVudD0mcXVvdDswJnF1b3Q7IC8mZ3Q7JiN4QTsgICAgICAgICZsdDtteENlbGwgaWQ9JnF1b3Q7SEVVWHRUZjBmY2kzdC1MMTNEdUUtMiZxdW90OyB2YWx1ZT0mcXVvdDsmcXVvdDsgc3R5bGU9JnF1b3Q7ZWxsaXBzZTt3aGl0ZVNwYWNlPXdyYXA7aHRtbD0xO2FzcGVjdD1maXhlZDtzdHJva2VDb2xvcj0jMDAwMDAwO2ZpbGxDb2xvcj0jMDAwMDAwOyZxdW90OyB2ZXJ0ZXg9JnF1b3Q7MSZxdW90OyBwYXJlbnQ9JnF1b3Q7MSZxdW90OyZndDsmI3hBOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSB4PSZxdW90OzE0MCZxdW90OyB5PSZxdW90OzcwJnF1b3Q7IHdpZHRoPSZxdW90OzIwJnF1b3Q7IGhlaWdodD0mcXVvdDsyMCZxdW90OyBhcz0mcXVvdDtnZW9tZXRyeSZxdW90OyAvJmd0OyYjeEE7ICAgICAgICAmbHQ7L214Q2VsbCZndDsmI3hBOyAgICAgICZsdDsvcm9vdCZndDsmI3hBOyAgICAmbHQ7L214R3JhcGhNb2RlbCZndDsmI3hBOyAgJmx0Oy9kaWFncmFtJmd0OyYjeEE7Jmx0Oy9teGZpbGUmZ3Q7JiN4QTsiPjxkZWZzLz48Zz48ZWxsaXBzZSBjeD0iMTAiIGN5PSIxMCIgcng9IjEwIiByeT0iMTAiIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0iIzAwMDAwMCIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjwvZz48L3N2Zz4='; }",
+      "coordinates_2d": null,
+      "relative_coordinate_3d": null,
+      "absolute_coordinate_3d": null,
+      "uuid_metaobject": "7c35d2a8-6c4c-4b31-9c6e-275a239d5188"
+    }
+  ],
+  "relationclasses": [
+    {
+      "uuid": "4d623dae-c4e9-4f84-a2f9-5daaca7d0bb9",
+      "name": "is connected to",
+      "is_reusable": true,
+      "is_abstract": false,
+      "attributes": [],
+      "class_references": [],
+      "ports": [],
+      "role_from": "b88e7a3a-34b7-4488-9d26-1965b376be7e",
+      "role_to": "b88e7a3a-34b7-4488-9d26-1965b376be7e",
+      "roles": [
+        {
+          "uuid": "b88e7a3a-34b7-4488-9d26-1965b376be7e",
+          "name": "source is connected to target",
+          "class_references": [
+            {
+              "uuid": "12361a3b-b560-432f-bdaa-49fee322bf6d",
+              "min": null,
+              "max": null
+            },
+            {
+              "uuid": "7c35d2a8-6c4c-4b31-9c6e-275a239d5188",
+              "min": null,
+              "max": null
+            },
+            {
+              "uuid": "82e20f7a-a827-4f00-9378-e785750de868",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "b88e7a3a-34b7-4488-9d26-1965b376be7e",
+          "description": "The elements from the device and the wall classes are allowed as a source and as a target for the relationclass is connected to",
+          "creation_time": "2023-04-05T08:17:15.112Z",
+          "modification_time": "2023-04-13T12:28:31.606Z",
+          "geometry": null,
+          "coordinates_2d": null,
+          "relative_coordinate_3d": null,
+          "absolute_coordinate_3d": null
+        }
+      ],
+      "relationclass_references": [],
+      "description": "Allow to connect a device with another device or with a wall",
+      "creation_time": "2023-04-05T08:17:15.090Z",
+      "modification_time": "2023-04-13T12:27:37.685Z",
+      "geometry": "function vizRep(gc) { let map = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZGlhZ3JhbXMubmV0IC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgd2lkdGg9IjEzMHB4IiBoZWlnaHQ9IjRweCIgdmlld0JveD0iLTAuNSAtMC41IDEzMCA0IiBjb250ZW50PSImbHQ7bXhmaWxlIGhvc3Q9JnF1b3Q7YXBwLmRpYWdyYW1zLm5ldCZxdW90OyBtb2RpZmllZD0mcXVvdDsyMDIzLTA0LTAzVDA2OjA4OjEzLjk0OFomcXVvdDsgYWdlbnQ9JnF1b3Q7TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NDsgcnY6MTA5LjApIEdlY2tvLzIwMTAwMTAxIEZpcmVmb3gvMTExLjAmcXVvdDsgZXRhZz0mcXVvdDtUSnlZNENuYURyOWNDbEZKZHNwdCZxdW90OyB2ZXJzaW9uPSZxdW90OzIxLjEuMiZxdW90OyB0eXBlPSZxdW90O2RldmljZSZxdW90OyZndDsmI3hBOyAgJmx0O2RpYWdyYW0gbmFtZT0mcXVvdDtQYWdlLTEmcXVvdDsgaWQ9JnF1b3Q7N0FHZFZ0M2F2d1M4SndpRFZEQmMmcXVvdDsmZ3Q7JiN4QTsgICAgJmx0O214R3JhcGhNb2RlbCBkeD0mcXVvdDs0NzImcXVvdDsgZHk9JnF1b3Q7NzA1JnF1b3Q7IGdyaWQ9JnF1b3Q7MSZxdW90OyBncmlkU2l6ZT0mcXVvdDsxMCZxdW90OyBndWlkZXM9JnF1b3Q7MSZxdW90OyB0b29sdGlwcz0mcXVvdDsxJnF1b3Q7IGNvbm5lY3Q9JnF1b3Q7MSZxdW90OyBhcnJvd3M9JnF1b3Q7MSZxdW90OyBmb2xkPSZxdW90OzEmcXVvdDsgcGFnZT0mcXVvdDsxJnF1b3Q7IHBhZ2VTY2FsZT0mcXVvdDsxJnF1b3Q7IHBhZ2VXaWR0aD0mcXVvdDs4MjcmcXVvdDsgcGFnZUhlaWdodD0mcXVvdDsxMTY5JnF1b3Q7IG1hdGg9JnF1b3Q7MCZxdW90OyBzaGFkb3c9JnF1b3Q7MCZxdW90OyZndDsmI3hBOyAgICAgICZsdDtyb290Jmd0OyYjeEE7ICAgICAgICAmbHQ7bXhDZWxsIGlkPSZxdW90OzAmcXVvdDsgLyZndDsmI3hBOyAgICAgICAgJmx0O214Q2VsbCBpZD0mcXVvdDsxJnF1b3Q7IHBhcmVudD0mcXVvdDswJnF1b3Q7IC8mZ3Q7JiN4QTsgICAgICAgICZsdDtteENlbGwgaWQ9JnF1b3Q7UFRLNkFJTVBqNE44a29ramtZcFItMiZxdW90OyB2YWx1ZT0mcXVvdDsmcXVvdDsgc3R5bGU9JnF1b3Q7ZW5kQXJyb3c9bm9uZTtzdGFydEFycm93PW5vbmU7ZW5kRmlsbD0wO3N0YXJ0RmlsbD0wO2VuZFNpemU9ODtodG1sPTE7dmVydGljYWxBbGlnbj1ib3R0b207bGFiZWxCYWNrZ3JvdW5kQ29sb3I9bm9uZTtzdHJva2VXaWR0aD0zO3JvdW5kZWQ9MDtleGl0WD0xO2V4aXRZPTAuNTtleGl0RHg9MDtleGl0RHk9MDtlbnRyeVg9MDtlbnRyeVk9MC41O2VudHJ5RHg9MDtlbnRyeUR5PTA7JnF1b3Q7IHBhcmVudD0mcXVvdDsxJnF1b3Q7IGVkZ2U9JnF1b3Q7MSZxdW90OyZndDsmI3hBOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSB3aWR0aD0mcXVvdDsxNjAmcXVvdDsgcmVsYXRpdmU9JnF1b3Q7MSZxdW90OyBhcz0mcXVvdDtnZW9tZXRyeSZxdW90OyZndDsmI3hBOyAgICAgICAgICAgICZsdDtteFBvaW50IHg9JnF1b3Q7MTgwJnF1b3Q7IHk9JnF1b3Q7MzYuNSZxdW90OyBhcz0mcXVvdDtzb3VyY2VQb2ludCZxdW90OyAvJmd0OyYjeEE7ICAgICAgICAgICAgJmx0O214UG9pbnQgeD0mcXVvdDszMDYmcXVvdDsgeT0mcXVvdDszNi41JnF1b3Q7IGFzPSZxdW90O3RhcmdldFBvaW50JnF1b3Q7IC8mZ3Q7JiN4QTsgICAgICAgICAgJmx0Oy9teEdlb21ldHJ5Jmd0OyYjeEE7ICAgICAgICAmbHQ7L214Q2VsbCZndDsmI3hBOyAgICAgICZsdDsvcm9vdCZndDsmI3hBOyAgICAmbHQ7L214R3JhcGhNb2RlbCZndDsmI3hBOyAgJmx0Oy9kaWFncmFtJmd0OyYjeEE7Jmx0Oy9teGZpbGUmZ3Q7JiN4QTsiPjxkZWZzLz48Zz48cGF0aCBkPSJNIDEgMS41IEwgMTI3IDEuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2IoMCwgMCwgMCkiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PC9nPjwvc3ZnPg=='; let icon = map; gc.rel_graphic_line('black', 0.006, false, 0, 0, 0); }",
+      "coordinates_2d": null,
+      "relative_coordinate_3d": null,
+      "absolute_coordinate_3d": null,
+      "uuid_metaobject": "4d623dae-c4e9-4f84-a2f9-5daaca7d0bb9",
+      "uuid_class": "4d623dae-c4e9-4f84-a2f9-5daaca7d0bb9",
+      "uuid_class_bendpoint": "7c35d2a8-6c4c-4b31-9c6e-275a239d5188",
+      "bendpoints": "7c35d2a8-6c4c-4b31-9c6e-275a239d5188"
+    }
+  ],
+  "attributes": [],
+  "ports": [],
+  "roleSceneRef": [],
+  "description": "It is the middle intermediate layer metamodel for IT infrastructure",
+  "creation_time": "2023-04-05T08:17:14.870Z",
+  "modification_time": "2023-04-05T08:17:15.192Z",
+  "geometry": null,
+  "coordinates_2d": null,
+  "relative_coordinate_3d": null,
+  "absolute_coordinate_3d": null,
+  "uuid_metaobject": "d0c18cf9-17cc-456b-9b62-1d7d95449767"
+}
