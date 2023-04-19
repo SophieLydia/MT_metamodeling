@@ -659,19 +659,19 @@
   ],
   "relationclasses": [
     {
-      "uuid": "a79ae622-575d-47f8-962d-86de9fc38c7c",
-      "name": "is connected to power port",
+      "uuid": "bc78a4a5-7541-4ba2-976f-7ec8199242d4",
+      "name": "is connected to coaxial port",
       "is_reusable": true,
       "is_abstract": false,
       "attributes": [],
       "class_references": [],
       "ports": [],
-      "role_from": "e36172a9-85bc-48c0-8b1b-5a5a6ca111e5",
-      "role_to": "e36172a9-85bc-48c0-8b1b-5a5a6ca111e5",
+      "role_from": "dbe6f752-a505-4c9f-aea9-e2a5f9846000",
+      "role_to": "dbe6f752-a505-4c9f-aea9-e2a5f9846000",
       "roles": [
         {
-          "uuid": "e36172a9-85bc-48c0-8b1b-5a5a6ca111e5",
-          "name": "source is connected to target power port",
+          "uuid": "dbe6f752-a505-4c9f-aea9-e2a5f9846000",
+          "name": "source is connected to target coaxial port",
           "class_references": [
             {
               "uuid": "568e939b-ba82-44b3-b8b0-c96a20ac0509",
@@ -683,15 +683,15 @@
           "scenetype_references": [],
           "port_references": [
             {
-              "uuid": "4766361f-50f1-443a-84f1-45559bc30006",
+              "uuid": "844941ae-0634-4b59-88ff-3d8df0662132",
               "min": null,
               "max": 1
             }
           ],
-          "uuid_metaobject": "e36172a9-85bc-48c0-8b1b-5a5a6ca111e5",
-          "description": "The power ports of a device and a wall are allowed as a source and as a target for the relationclass is connected to power port. A port can be connected only one time.",
-          "creation_time": "2023-04-06T13:16:37.161Z",
-          "modification_time": "2023-04-06T14:09:42.358Z",
+          "uuid_metaobject": "dbe6f752-a505-4c9f-aea9-e2a5f9846000",
+          "description": "The coaxial ports of a device and a wall are allowed as a source and as a target for the relationclass is connected to coaxial port. A port can be connected only one time.",
+          "creation_time": "2023-04-06T13:56:37.071Z",
+          "modification_time": "2023-04-06T14:16:28.720Z",
           "geometry": null,
           "coordinates_2d": null,
           "relative_coordinate_3d": null,
@@ -699,15 +699,68 @@
         }
       ],
       "relationclass_references": [],
-      "description": "Allow to connect a power port with another on a device or a wall",
-      "creation_time": "2023-04-06T13:16:37.116Z",
-      "modification_time": "2023-04-13T07:52:16.884Z",
-      "geometry": "function vizRep(gc) { let map = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZGlhZ3JhbXMubmV0IC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI4MXB4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSA4MSAxMSIgY29udGVudD0iJmx0O214ZmlsZSBob3N0PSZxdW90O2FwcC5kaWFncmFtcy5uZXQmcXVvdDsgbW9kaWZpZWQ9JnF1b3Q7MjAyMy0wNC0wNlQxMzoxODoyOS41MzVaJnF1b3Q7IGFnZW50PSZxdW90O01vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQ7IHJ2OjEwOS4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzExMS4wJnF1b3Q7IGV0YWc9JnF1b3Q7LTFMRmx3T3BMeERCc2hmZjZQVXImcXVvdDsgdmVyc2lvbj0mcXVvdDsyMS4xLjQmcXVvdDsgdHlwZT0mcXVvdDtkZXZpY2UmcXVvdDsmZ3Q7Jmx0O2RpYWdyYW0gaWQ9JnF1b3Q7dFRhaF9CNEhVbzdyYnFZU3lJS0QmcXVvdDsgbmFtZT0mcXVvdDtQYWdlLTEmcXVvdDsmZ3Q7alpUTGJ1TXdERVcveHNzQ2ZyUjVMRHVlVG1aVElFQ0s2VnBqTWJaUVdUUmtPWW43OVVOSGxCOU5pODdHRUkrcFMvcFNjcFRsOVdWblJWTTlvd1FkcGJHOFJOblBLRTN2Tnh0NkRxRDNZQjAvZUZCYUpUMUtKbkJRNzhBd1p0b3BDZTBpMFNGcXA1b2xMTkFZS055Q0NXdnh2RXc3b2w1V2JVUUpOK0JRQ0gxTFg1VjBsYWViZEQzeDM2REtLbFJPVmx2L3BoWWhtYitrcllURTh3eGxUMUdXVzBUblYvVWxCejE0RjN6eCszNTk4WFpzeklKeC83TmgyLys1ankrdzY1UDgzYjNJbDZwZDVYZkpsdWR6RXJyalQrWjJYUjg4QUNNZkJ5c3BNbWdJL3FoY3JTbEthR214TXhLR0dqRkZyYlA0QmpscXRFUWtIRVduM2NpRGc4bVZDT3Q0M2l1S0tTekI3Y0dxR2h6WVF5TUtaVXFXUFNxdGd5aTNRSFkydzE2dHpCdUZvUDllR3p5QmRZckdSK2djcXNVKzNicy9CTGZXc1pzZ0Y2ZUJqZHdCVWsrMnA0VHpkQVllZUs3VmJQeUJXZERDcWRQeURBaytpdVVvTjFiWW82Sk8wcGh2ellabCtNNk1seUVvdE5qWkFualRmT1FmZEpMVk4wSnMra2NobXJib1oybk5rTkIrM1crU2ZsNkg1V2poRlVNMHMzUkMxK01hd3VsYStQVHAzNUk5L1FNPSZsdDsvZGlhZ3JhbSZndDsmbHQ7L214ZmlsZSZndDsiPjxkZWZzLz48Zz48cGF0aCBkPSJNIDAgMCBMIDQwIDAgTCA4MCAwIE0gODAgMTAgTCA0MCAxMCBMIDAgMTAgTSA4MCAxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2IoMCwgMCwgMCkiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQyIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PC9nPjwvc3ZnPg=='; let icon = map; gc.rel_graphic_line('black', 0.005, false, 0, 0, 0); }",
+      "description": "Allow to connect a coaxial port with another on a device or a wall",
+      "creation_time": "2023-04-06T13:56:37.016Z",
+      "modification_time": "2023-04-17T13:28:42.453Z",
+      "geometry": "function vizRep(gc) { let map = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZGlhZ3JhbXMubmV0IC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI4MXB4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSA4MSAxMSIgY29udGVudD0iJmx0O214ZmlsZSBob3N0PSZxdW90O2FwcC5kaWFncmFtcy5uZXQmcXVvdDsgbW9kaWZpZWQ9JnF1b3Q7MjAyMy0wNC0wNlQxMzoxODoyOS41MzVaJnF1b3Q7IGFnZW50PSZxdW90O01vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQ7IHJ2OjEwOS4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzExMS4wJnF1b3Q7IGV0YWc9JnF1b3Q7LTFMRmx3T3BMeERCc2hmZjZQVXImcXVvdDsgdmVyc2lvbj0mcXVvdDsyMS4xLjQmcXVvdDsgdHlwZT0mcXVvdDtkZXZpY2UmcXVvdDsmZ3Q7Jmx0O2RpYWdyYW0gaWQ9JnF1b3Q7dFRhaF9CNEhVbzdyYnFZU3lJS0QmcXVvdDsgbmFtZT0mcXVvdDtQYWdlLTEmcXVvdDsmZ3Q7alpUTGJ1TXdERVcveHNzQ2ZyUjVMRHVlVG1aVElFQ0s2VnBqTWJaUVdUUmtPWW43OVVOSGxCOU5pODdHRUkrcFMvcFNjcFRsOVdWblJWTTlvd1FkcGJHOFJOblBLRTN2Tnh0NkRxRDNZQjAvZUZCYUpUMUtKbkJRNzhBd1p0b3BDZTBpMFNGcXA1b2xMTkFZS055Q0NXdnh2RXc3b2w1V2JVUUpOK0JRQ0gxTFg1VjBsYWViZEQzeDM2REtLbFJPVmx2L3BoWWhtYitrcllURTh3eGxUMUdXVzBUblYvVWxCejE0RjN6eCszNTk4WFpzeklKeC83TmgyLys1ankrdzY1UDgzYjNJbDZwZDVYZkpsdWR6RXJyalQrWjJYUjg4QUNNZkJ5c3BNbWdJL3FoY3JTbEthR214TXhLR0dqRkZyYlA0QmpscXRFUWtIRVduM2NpRGc4bVZDT3Q0M2l1S0tTekI3Y0dxR2h6WVF5TUtaVXFXUFNxdGd5aTNRSFkydzE2dHpCdUZvUDllR3p5QmRZckdSK2djcXNVKzNicy9CTGZXc1pzZ0Y2ZUJqZHdCVWsrMnA0VHpkQVllZUs3VmJQeUJXZERDcWRQeURBaytpdVVvTjFiWW82Sk8wcGh2ellabCtNNk1seUVvdE5qWkFualRmT1FmZEpMVk4wSnMra2NobXJib1oybk5rTkIrM1crU2ZsNkg1V2poRlVNMHMzUkMxK01hd3VsYStQVHAzNUk5L1FNPSZsdDsvZGlhZ3JhbSZndDsmbHQ7L214ZmlsZSZndDsiPjxkZWZzLz48Zz48cGF0aCBkPSJNIDAgMCBMIDQwIDAgTCA4MCAwIE0gODAgMTAgTCA0MCAxMCBMIDAgMTAgTSA4MCAxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2IoMCwgMCwgMCkiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQyIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PC9nPjwvc3ZnPg=='; let icon = map; gc.rel_graphic_line('lightgrey', 0.005, false, 0, 0, 0); }",
       "coordinates_2d": null,
       "relative_coordinate_3d": null,
       "absolute_coordinate_3d": null,
-      "uuid_metaobject": "a79ae622-575d-47f8-962d-86de9fc38c7c",
-      "uuid_class": "a79ae622-575d-47f8-962d-86de9fc38c7c",
+      "uuid_metaobject": "bc78a4a5-7541-4ba2-976f-7ec8199242d4",
+      "uuid_class": "bc78a4a5-7541-4ba2-976f-7ec8199242d4",
+      "uuid_class_bendpoint": "568e939b-ba82-44b3-b8b0-c96a20ac0509",
+      "bendpoints": "568e939b-ba82-44b3-b8b0-c96a20ac0509"
+    },
+    {
+      "uuid": "89e126cb-c898-46a7-9511-d98f382537df",
+      "name": "is connected to WAN port",
+      "is_reusable": true,
+      "is_abstract": false,
+      "attributes": [],
+      "class_references": [],
+      "ports": [],
+      "role_from": "114f0095-a11c-431c-b8c7-04a53b51c845",
+      "role_to": "114f0095-a11c-431c-b8c7-04a53b51c845",
+      "roles": [
+        {
+          "uuid": "114f0095-a11c-431c-b8c7-04a53b51c845",
+          "name": "source is connected to target WAN port",
+          "class_references": [
+            {
+              "uuid": "568e939b-ba82-44b3-b8b0-c96a20ac0509",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [
+            {
+              "uuid": "b98b4536-8082-44aa-a2b7-bec588264e49",
+              "min": null,
+              "max": 1
+            }
+          ],
+          "uuid_metaobject": "114f0095-a11c-431c-b8c7-04a53b51c845",
+          "description": "The WAN ports of a device are allowed as a source and as a target for the relationclass is connected to WAN port. A port can be connected only one time.",
+          "creation_time": "2023-04-06T13:50:27.462Z",
+          "modification_time": "2023-04-17T13:28:57.781Z",
+          "geometry": "function vizRep(gc) { let map = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZGlhZ3JhbXMubmV0IC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI4MXB4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSA4MSAxMSIgY29udGVudD0iJmx0O214ZmlsZSBob3N0PSZxdW90O2FwcC5kaWFncmFtcy5uZXQmcXVvdDsgbW9kaWZpZWQ9JnF1b3Q7MjAyMy0wNC0wNlQxMzoxODoyOS41MzVaJnF1b3Q7IGFnZW50PSZxdW90O01vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQ7IHJ2OjEwOS4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzExMS4wJnF1b3Q7IGV0YWc9JnF1b3Q7LTFMRmx3T3BMeERCc2hmZjZQVXImcXVvdDsgdmVyc2lvbj0mcXVvdDsyMS4xLjQmcXVvdDsgdHlwZT0mcXVvdDtkZXZpY2UmcXVvdDsmZ3Q7Jmx0O2RpYWdyYW0gaWQ9JnF1b3Q7dFRhaF9CNEhVbzdyYnFZU3lJS0QmcXVvdDsgbmFtZT0mcXVvdDtQYWdlLTEmcXVvdDsmZ3Q7alpUTGJ1TXdERVcveHNzQ2ZyUjVMRHVlVG1aVElFQ0s2VnBqTWJaUVdUUmtPWW43OVVOSGxCOU5pODdHRUkrcFMvcFNjcFRsOVdWblJWTTlvd1FkcGJHOFJOblBLRTN2Tnh0NkRxRDNZQjAvZUZCYUpUMUtKbkJRNzhBd1p0b3BDZTBpMFNGcXA1b2xMTkFZS055Q0NXdnh2RXc3b2w1V2JVUUpOK0JRQ0gxTFg1VjBsYWViZEQzeDM2REtLbFJPVmx2L3BoWWhtYitrcllURTh3eGxUMUdXVzBUblYvVWxCejE0RjN6eCszNTk4WFpzeklKeC83TmgyLys1ankrdzY1UDgzYjNJbDZwZDVYZkpsdWR6RXJyalQrWjJYUjg4QUNNZkJ5c3BNbWdJL3FoY3JTbEthR214TXhLR0dqRkZyYlA0QmpscXRFUWtIRVduM2NpRGc4bVZDT3Q0M2l1S0tTekI3Y0dxR2h6WVF5TUtaVXFXUFNxdGd5aTNRSFkydzE2dHpCdUZvUDllR3p5QmRZckdSK2djcXNVKzNicy9CTGZXc1pzZ0Y2ZUJqZHdCVWsrMnA0VHpkQVllZUs3VmJQeUJXZERDcWRQeURBaytpdVVvTjFiWW82Sk8wcGh2ellabCtNNk1seUVvdE5qWkFualRmT1FmZEpMVk4wSnMra2NobXJib1oybk5rTkIrM1crU2ZsNkg1V2poRlVNMHMzUkMxK01hd3VsYStQVHAzNUk5L1FNPSZsdDsvZGlhZ3JhbSZndDsmbHQ7L214ZmlsZSZndDsiPjxkZWZzLz48Zz48cGF0aCBkPSJNIDAgMCBMIDQwIDAgTCA4MCAwIE0gODAgMTAgTCA0MCAxMCBMIDAgMTAgTSA4MCAxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2IoMCwgMCwgMCkiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQyIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PC9nPjwvc3ZnPg=='; let icon = map; gc.rel_graphic_line('lightgrey', 0.005, false, 0, 0, 0); }",
+          "coordinates_2d": null,
+          "relative_coordinate_3d": null,
+          "absolute_coordinate_3d": null
+        }
+      ],
+      "relationclass_references": [],
+      "description": "Allow to connect a WAN port with another on a device",
+      "creation_time": "2023-04-06T13:50:27.400Z",
+      "modification_time": "2023-04-17T13:29:22.618Z",
+      "geometry": "function vizRep(gc) { let map = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZGlhZ3JhbXMubmV0IC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI4MXB4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSA4MSAxMSIgY29udGVudD0iJmx0O214ZmlsZSBob3N0PSZxdW90O2FwcC5kaWFncmFtcy5uZXQmcXVvdDsgbW9kaWZpZWQ9JnF1b3Q7MjAyMy0wNC0wNlQxMzoxODoyOS41MzVaJnF1b3Q7IGFnZW50PSZxdW90O01vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQ7IHJ2OjEwOS4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzExMS4wJnF1b3Q7IGV0YWc9JnF1b3Q7LTFMRmx3T3BMeERCc2hmZjZQVXImcXVvdDsgdmVyc2lvbj0mcXVvdDsyMS4xLjQmcXVvdDsgdHlwZT0mcXVvdDtkZXZpY2UmcXVvdDsmZ3Q7Jmx0O2RpYWdyYW0gaWQ9JnF1b3Q7dFRhaF9CNEhVbzdyYnFZU3lJS0QmcXVvdDsgbmFtZT0mcXVvdDtQYWdlLTEmcXVvdDsmZ3Q7alpUTGJ1TXdERVcveHNzQ2ZyUjVMRHVlVG1aVElFQ0s2VnBqTWJaUVdUUmtPWW43OVVOSGxCOU5pODdHRUkrcFMvcFNjcFRsOVdWblJWTTlvd1FkcGJHOFJOblBLRTN2Tnh0NkRxRDNZQjAvZUZCYUpUMUtKbkJRNzhBd1p0b3BDZTBpMFNGcXA1b2xMTkFZS055Q0NXdnh2RXc3b2w1V2JVUUpOK0JRQ0gxTFg1VjBsYWViZEQzeDM2REtLbFJPVmx2L3BoWWhtYitrcllURTh3eGxUMUdXVzBUblYvVWxCejE0RjN6eCszNTk4WFpzeklKeC83TmgyLys1ankrdzY1UDgzYjNJbDZwZDVYZkpsdWR6RXJyalQrWjJYUjg4QUNNZkJ5c3BNbWdJL3FoY3JTbEthR214TXhLR0dqRkZyYlA0QmpscXRFUWtIRVduM2NpRGc4bVZDT3Q0M2l1S0tTekI3Y0dxR2h6WVF5TUtaVXFXUFNxdGd5aTNRSFkydzE2dHpCdUZvUDllR3p5QmRZckdSK2djcXNVKzNicy9CTGZXc1pzZ0Y2ZUJqZHdCVWsrMnA0VHpkQVllZUs3VmJQeUJXZERDcWRQeURBaytpdVVvTjFiWW82Sk8wcGh2ellabCtNNk1seUVvdE5qWkFualRmT1FmZEpMVk4wSnMra2NobXJib1oybk5rTkIrM1crU2ZsNkg1V2poRlVNMHMzUkMxK01hd3VsYStQVHAzNUk5L1FNPSZsdDsvZGlhZ3JhbSZndDsmbHQ7L214ZmlsZSZndDsiPjxkZWZzLz48Zz48cGF0aCBkPSJNIDAgMCBMIDQwIDAgTCA4MCAwIE0gODAgMTAgTCA0MCAxMCBMIDAgMTAgTSA4MCAxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2IoMCwgMCwgMCkiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQyIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PC9nPjwvc3ZnPg=='; let icon = map; gc.rel_graphic_line('lightgrey', 0.005, false, 0, 0, 0); }",
+      "coordinates_2d": null,
+      "relative_coordinate_3d": null,
+      "absolute_coordinate_3d": null,
+      "uuid_metaobject": "89e126cb-c898-46a7-9511-d98f382537df",
+      "uuid_class": "89e126cb-c898-46a7-9511-d98f382537df",
       "uuid_class_bendpoint": "568e939b-ba82-44b3-b8b0-c96a20ac0509",
       "bendpoints": "568e939b-ba82-44b3-b8b0-c96a20ac0509"
     },
@@ -754,8 +807,8 @@
       "relationclass_references": [],
       "description": "Allow to connect a LAN port with another on a device",
       "creation_time": "2023-04-06T13:47:16.764Z",
-      "modification_time": "2023-04-13T07:54:49.691Z",
-      "geometry": "function vizRep(gc) { let map = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZGlhZ3JhbXMubmV0IC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI4MXB4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSA4MSAxMSIgY29udGVudD0iJmx0O214ZmlsZSBob3N0PSZxdW90O2FwcC5kaWFncmFtcy5uZXQmcXVvdDsgbW9kaWZpZWQ9JnF1b3Q7MjAyMy0wNC0wNlQxMzoxODoyOS41MzVaJnF1b3Q7IGFnZW50PSZxdW90O01vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQ7IHJ2OjEwOS4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzExMS4wJnF1b3Q7IGV0YWc9JnF1b3Q7LTFMRmx3T3BMeERCc2hmZjZQVXImcXVvdDsgdmVyc2lvbj0mcXVvdDsyMS4xLjQmcXVvdDsgdHlwZT0mcXVvdDtkZXZpY2UmcXVvdDsmZ3Q7Jmx0O2RpYWdyYW0gaWQ9JnF1b3Q7dFRhaF9CNEhVbzdyYnFZU3lJS0QmcXVvdDsgbmFtZT0mcXVvdDtQYWdlLTEmcXVvdDsmZ3Q7alpUTGJ1TXdERVcveHNzQ2ZyUjVMRHVlVG1aVElFQ0s2VnBqTWJaUVdUUmtPWW43OVVOSGxCOU5pODdHRUkrcFMvcFNjcFRsOVdWblJWTTlvd1FkcGJHOFJOblBLRTN2Tnh0NkRxRDNZQjAvZUZCYUpUMUtKbkJRNzhBd1p0b3BDZTBpMFNGcXA1b2xMTkFZS055Q0NXdnh2RXc3b2w1V2JVUUpOK0JRQ0gxTFg1VjBsYWViZEQzeDM2REtLbFJPVmx2L3BoWWhtYitrcllURTh3eGxUMUdXVzBUblYvVWxCejE0RjN6eCszNTk4WFpzeklKeC83TmgyLys1ankrdzY1UDgzYjNJbDZwZDVYZkpsdWR6RXJyalQrWjJYUjg4QUNNZkJ5c3BNbWdJL3FoY3JTbEthR214TXhLR0dqRkZyYlA0QmpscXRFUWtIRVduM2NpRGc4bVZDT3Q0M2l1S0tTekI3Y0dxR2h6WVF5TUtaVXFXUFNxdGd5aTNRSFkydzE2dHpCdUZvUDllR3p5QmRZckdSK2djcXNVKzNicy9CTGZXc1pzZ0Y2ZUJqZHdCVWsrMnA0VHpkQVllZUs3VmJQeUJXZERDcWRQeURBaytpdVVvTjFiWW82Sk8wcGh2ellabCtNNk1seUVvdE5qWkFualRmT1FmZEpMVk4wSnMra2NobXJib1oybk5rTkIrM1crU2ZsNkg1V2poRlVNMHMzUkMxK01hd3VsYStQVHAzNUk5L1FNPSZsdDsvZGlhZ3JhbSZndDsmbHQ7L214ZmlsZSZndDsiPjxkZWZzLz48Zz48cGF0aCBkPSJNIDAgMCBMIDQwIDAgTCA4MCAwIE0gODAgMTAgTCA0MCAxMCBMIDAgMTAgTSA4MCAxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2IoMCwgMCwgMCkiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQyIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PC9nPjwvc3ZnPg=='; let icon = map; gc.rel_graphic_line('black', 0.005, false, 0, 0, 0); }",
+      "modification_time": "2023-04-17T13:29:32.483Z",
+      "geometry": "function vizRep(gc) { let map = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZGlhZ3JhbXMubmV0IC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI4MXB4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSA4MSAxMSIgY29udGVudD0iJmx0O214ZmlsZSBob3N0PSZxdW90O2FwcC5kaWFncmFtcy5uZXQmcXVvdDsgbW9kaWZpZWQ9JnF1b3Q7MjAyMy0wNC0wNlQxMzoxODoyOS41MzVaJnF1b3Q7IGFnZW50PSZxdW90O01vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQ7IHJ2OjEwOS4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzExMS4wJnF1b3Q7IGV0YWc9JnF1b3Q7LTFMRmx3T3BMeERCc2hmZjZQVXImcXVvdDsgdmVyc2lvbj0mcXVvdDsyMS4xLjQmcXVvdDsgdHlwZT0mcXVvdDtkZXZpY2UmcXVvdDsmZ3Q7Jmx0O2RpYWdyYW0gaWQ9JnF1b3Q7dFRhaF9CNEhVbzdyYnFZU3lJS0QmcXVvdDsgbmFtZT0mcXVvdDtQYWdlLTEmcXVvdDsmZ3Q7alpUTGJ1TXdERVcveHNzQ2ZyUjVMRHVlVG1aVElFQ0s2VnBqTWJaUVdUUmtPWW43OVVOSGxCOU5pODdHRUkrcFMvcFNjcFRsOVdWblJWTTlvd1FkcGJHOFJOblBLRTN2Tnh0NkRxRDNZQjAvZUZCYUpUMUtKbkJRNzhBd1p0b3BDZTBpMFNGcXA1b2xMTkFZS055Q0NXdnh2RXc3b2w1V2JVUUpOK0JRQ0gxTFg1VjBsYWViZEQzeDM2REtLbFJPVmx2L3BoWWhtYitrcllURTh3eGxUMUdXVzBUblYvVWxCejE0RjN6eCszNTk4WFpzeklKeC83TmgyLys1ankrdzY1UDgzYjNJbDZwZDVYZkpsdWR6RXJyalQrWjJYUjg4QUNNZkJ5c3BNbWdJL3FoY3JTbEthR214TXhLR0dqRkZyYlA0QmpscXRFUWtIRVduM2NpRGc4bVZDT3Q0M2l1S0tTekI3Y0dxR2h6WVF5TUtaVXFXUFNxdGd5aTNRSFkydzE2dHpCdUZvUDllR3p5QmRZckdSK2djcXNVKzNicy9CTGZXc1pzZ0Y2ZUJqZHdCVWsrMnA0VHpkQVllZUs3VmJQeUJXZERDcWRQeURBaytpdVVvTjFiWW82Sk8wcGh2ellabCtNNk1seUVvdE5qWkFualRmT1FmZEpMVk4wSnMra2NobXJib1oybk5rTkIrM1crU2ZsNkg1V2poRlVNMHMzUkMxK01hd3VsYStQVHAzNUk5L1FNPSZsdDsvZGlhZ3JhbSZndDsmbHQ7L214ZmlsZSZndDsiPjxkZWZzLz48Zz48cGF0aCBkPSJNIDAgMCBMIDQwIDAgTCA4MCAwIE0gODAgMTAgTCA0MCAxMCBMIDAgMTAgTSA4MCAxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2IoMCwgMCwgMCkiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQyIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PC9nPjwvc3ZnPg=='; let icon = map; gc.rel_graphic_line('lightgrey', 0.005, false, 0, 0, 0); }",
       "coordinates_2d": null,
       "relative_coordinate_3d": null,
       "absolute_coordinate_3d": null,
@@ -765,19 +818,19 @@
       "bendpoints": "568e939b-ba82-44b3-b8b0-c96a20ac0509"
     },
     {
-      "uuid": "89e126cb-c898-46a7-9511-d98f382537df",
-      "name": "is connected to WAN port",
+      "uuid": "a79ae622-575d-47f8-962d-86de9fc38c7c",
+      "name": "is connected to power port",
       "is_reusable": true,
       "is_abstract": false,
       "attributes": [],
       "class_references": [],
       "ports": [],
-      "role_from": "114f0095-a11c-431c-b8c7-04a53b51c845",
-      "role_to": "114f0095-a11c-431c-b8c7-04a53b51c845",
+      "role_from": "e36172a9-85bc-48c0-8b1b-5a5a6ca111e5",
+      "role_to": "e36172a9-85bc-48c0-8b1b-5a5a6ca111e5",
       "roles": [
         {
-          "uuid": "114f0095-a11c-431c-b8c7-04a53b51c845",
-          "name": "source is connected to target WAN port",
+          "uuid": "e36172a9-85bc-48c0-8b1b-5a5a6ca111e5",
+          "name": "source is connected to target power port",
           "class_references": [
             {
               "uuid": "568e939b-ba82-44b3-b8b0-c96a20ac0509",
@@ -789,15 +842,15 @@
           "scenetype_references": [],
           "port_references": [
             {
-              "uuid": "b98b4536-8082-44aa-a2b7-bec588264e49",
+              "uuid": "4766361f-50f1-443a-84f1-45559bc30006",
               "min": null,
               "max": 1
             }
           ],
-          "uuid_metaobject": "114f0095-a11c-431c-b8c7-04a53b51c845",
-          "description": "The WAN ports of a device are allowed as a source and as a target for the relationclass is connected to WAN port. A port can be connected only one time.",
-          "creation_time": "2023-04-06T13:50:27.462Z",
-          "modification_time": "2023-04-06T14:14:50.711Z",
+          "uuid_metaobject": "e36172a9-85bc-48c0-8b1b-5a5a6ca111e5",
+          "description": "The power ports of a device and a wall are allowed as a source and as a target for the relationclass is connected to power port. A port can be connected only one time.",
+          "creation_time": "2023-04-06T13:16:37.161Z",
+          "modification_time": "2023-04-06T14:09:42.358Z",
           "geometry": null,
           "coordinates_2d": null,
           "relative_coordinate_3d": null,
@@ -805,68 +858,15 @@
         }
       ],
       "relationclass_references": [],
-      "description": "Allow to connect a WAN port with another on a device",
-      "creation_time": "2023-04-06T13:50:27.400Z",
-      "modification_time": "2023-04-13T07:55:24.794Z",
-      "geometry": "function vizRep(gc) { let map = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZGlhZ3JhbXMubmV0IC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI4MXB4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSA4MSAxMSIgY29udGVudD0iJmx0O214ZmlsZSBob3N0PSZxdW90O2FwcC5kaWFncmFtcy5uZXQmcXVvdDsgbW9kaWZpZWQ9JnF1b3Q7MjAyMy0wNC0wNlQxMzoxODoyOS41MzVaJnF1b3Q7IGFnZW50PSZxdW90O01vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQ7IHJ2OjEwOS4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzExMS4wJnF1b3Q7IGV0YWc9JnF1b3Q7LTFMRmx3T3BMeERCc2hmZjZQVXImcXVvdDsgdmVyc2lvbj0mcXVvdDsyMS4xLjQmcXVvdDsgdHlwZT0mcXVvdDtkZXZpY2UmcXVvdDsmZ3Q7Jmx0O2RpYWdyYW0gaWQ9JnF1b3Q7dFRhaF9CNEhVbzdyYnFZU3lJS0QmcXVvdDsgbmFtZT0mcXVvdDtQYWdlLTEmcXVvdDsmZ3Q7alpUTGJ1TXdERVcveHNzQ2ZyUjVMRHVlVG1aVElFQ0s2VnBqTWJaUVdUUmtPWW43OVVOSGxCOU5pODdHRUkrcFMvcFNjcFRsOVdWblJWTTlvd1FkcGJHOFJOblBLRTN2Tnh0NkRxRDNZQjAvZUZCYUpUMUtKbkJRNzhBd1p0b3BDZTBpMFNGcXA1b2xMTkFZS055Q0NXdnh2RXc3b2w1V2JVUUpOK0JRQ0gxTFg1VjBsYWViZEQzeDM2REtLbFJPVmx2L3BoWWhtYitrcllURTh3eGxUMUdXVzBUblYvVWxCejE0RjN6eCszNTk4WFpzeklKeC83TmgyLys1ankrdzY1UDgzYjNJbDZwZDVYZkpsdWR6RXJyalQrWjJYUjg4QUNNZkJ5c3BNbWdJL3FoY3JTbEthR214TXhLR0dqRkZyYlA0QmpscXRFUWtIRVduM2NpRGc4bVZDT3Q0M2l1S0tTekI3Y0dxR2h6WVF5TUtaVXFXUFNxdGd5aTNRSFkydzE2dHpCdUZvUDllR3p5QmRZckdSK2djcXNVKzNicy9CTGZXc1pzZ0Y2ZUJqZHdCVWsrMnA0VHpkQVllZUs3VmJQeUJXZERDcWRQeURBaytpdVVvTjFiWW82Sk8wcGh2ellabCtNNk1seUVvdE5qWkFualRmT1FmZEpMVk4wSnMra2NobXJib1oybk5rTkIrM1crU2ZsNkg1V2poRlVNMHMzUkMxK01hd3VsYStQVHAzNUk5L1FNPSZsdDsvZGlhZ3JhbSZndDsmbHQ7L214ZmlsZSZndDsiPjxkZWZzLz48Zz48cGF0aCBkPSJNIDAgMCBMIDQwIDAgTCA4MCAwIE0gODAgMTAgTCA0MCAxMCBMIDAgMTAgTSA4MCAxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2IoMCwgMCwgMCkiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQyIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PC9nPjwvc3ZnPg=='; let icon = map; gc.rel_graphic_line('black', 0.005, false, 0, 0, 0); }",
+      "description": "Allow to connect a power port with another on a device or a wall",
+      "creation_time": "2023-04-06T13:16:37.116Z",
+      "modification_time": "2023-04-17T13:29:53.681Z",
+      "geometry": "function vizRep(gc) { let map = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZGlhZ3JhbXMubmV0IC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI4MXB4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSA4MSAxMSIgY29udGVudD0iJmx0O214ZmlsZSBob3N0PSZxdW90O2FwcC5kaWFncmFtcy5uZXQmcXVvdDsgbW9kaWZpZWQ9JnF1b3Q7MjAyMy0wNC0wNlQxMzoxODoyOS41MzVaJnF1b3Q7IGFnZW50PSZxdW90O01vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQ7IHJ2OjEwOS4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzExMS4wJnF1b3Q7IGV0YWc9JnF1b3Q7LTFMRmx3T3BMeERCc2hmZjZQVXImcXVvdDsgdmVyc2lvbj0mcXVvdDsyMS4xLjQmcXVvdDsgdHlwZT0mcXVvdDtkZXZpY2UmcXVvdDsmZ3Q7Jmx0O2RpYWdyYW0gaWQ9JnF1b3Q7dFRhaF9CNEhVbzdyYnFZU3lJS0QmcXVvdDsgbmFtZT0mcXVvdDtQYWdlLTEmcXVvdDsmZ3Q7alpUTGJ1TXdERVcveHNzQ2ZyUjVMRHVlVG1aVElFQ0s2VnBqTWJaUVdUUmtPWW43OVVOSGxCOU5pODdHRUkrcFMvcFNjcFRsOVdWblJWTTlvd1FkcGJHOFJOblBLRTN2Tnh0NkRxRDNZQjAvZUZCYUpUMUtKbkJRNzhBd1p0b3BDZTBpMFNGcXA1b2xMTkFZS055Q0NXdnh2RXc3b2w1V2JVUUpOK0JRQ0gxTFg1VjBsYWViZEQzeDM2REtLbFJPVmx2L3BoWWhtYitrcllURTh3eGxUMUdXVzBUblYvVWxCejE0RjN6eCszNTk4WFpzeklKeC83TmgyLys1ankrdzY1UDgzYjNJbDZwZDVYZkpsdWR6RXJyalQrWjJYUjg4QUNNZkJ5c3BNbWdJL3FoY3JTbEthR214TXhLR0dqRkZyYlA0QmpscXRFUWtIRVduM2NpRGc4bVZDT3Q0M2l1S0tTekI3Y0dxR2h6WVF5TUtaVXFXUFNxdGd5aTNRSFkydzE2dHpCdUZvUDllR3p5QmRZckdSK2djcXNVKzNicy9CTGZXc1pzZ0Y2ZUJqZHdCVWsrMnA0VHpkQVllZUs3VmJQeUJXZERDcWRQeURBaytpdVVvTjFiWW82Sk8wcGh2ellabCtNNk1seUVvdE5qWkFualRmT1FmZEpMVk4wSnMra2NobXJib1oybk5rTkIrM1crU2ZsNkg1V2poRlVNMHMzUkMxK01hd3VsYStQVHAzNUk5L1FNPSZsdDsvZGlhZ3JhbSZndDsmbHQ7L214ZmlsZSZndDsiPjxkZWZzLz48Zz48cGF0aCBkPSJNIDAgMCBMIDQwIDAgTCA4MCAwIE0gODAgMTAgTCA0MCAxMCBMIDAgMTAgTSA4MCAxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2IoMCwgMCwgMCkiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQyIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PC9nPjwvc3ZnPg=='; let icon = map; gc.rel_graphic_line('lightgrey', 0.005, false, 0, 0, 0); }",
       "coordinates_2d": null,
       "relative_coordinate_3d": null,
       "absolute_coordinate_3d": null,
-      "uuid_metaobject": "89e126cb-c898-46a7-9511-d98f382537df",
-      "uuid_class": "89e126cb-c898-46a7-9511-d98f382537df",
-      "uuid_class_bendpoint": "568e939b-ba82-44b3-b8b0-c96a20ac0509",
-      "bendpoints": "568e939b-ba82-44b3-b8b0-c96a20ac0509"
-    },
-    {
-      "uuid": "bc78a4a5-7541-4ba2-976f-7ec8199242d4",
-      "name": "is connected to coaxial port",
-      "is_reusable": true,
-      "is_abstract": false,
-      "attributes": [],
-      "class_references": [],
-      "ports": [],
-      "role_from": "dbe6f752-a505-4c9f-aea9-e2a5f9846000",
-      "role_to": "dbe6f752-a505-4c9f-aea9-e2a5f9846000",
-      "roles": [
-        {
-          "uuid": "dbe6f752-a505-4c9f-aea9-e2a5f9846000",
-          "name": "source is connected to target coaxial port",
-          "class_references": [
-            {
-              "uuid": "568e939b-ba82-44b3-b8b0-c96a20ac0509",
-              "min": null,
-              "max": null
-            }
-          ],
-          "relationclass_references": [],
-          "scenetype_references": [],
-          "port_references": [
-            {
-              "uuid": "844941ae-0634-4b59-88ff-3d8df0662132",
-              "min": null,
-              "max": 1
-            }
-          ],
-          "uuid_metaobject": "dbe6f752-a505-4c9f-aea9-e2a5f9846000",
-          "description": "The coaxial ports of a device and a wall are allowed as a source and as a target for the relationclass is connected to coaxial port. A port can be connected only one time.",
-          "creation_time": "2023-04-06T13:56:37.071Z",
-          "modification_time": "2023-04-06T14:16:28.720Z",
-          "geometry": null,
-          "coordinates_2d": null,
-          "relative_coordinate_3d": null,
-          "absolute_coordinate_3d": null
-        }
-      ],
-      "relationclass_references": [],
-      "description": "Allow to connect a coaxial port with another on a device or a wall",
-      "creation_time": "2023-04-06T13:56:37.016Z",
-      "modification_time": "2023-04-13T07:57:54.616Z",
-      "geometry": "function vizRep(gc) { let map = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZGlhZ3JhbXMubmV0IC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI4MXB4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSA4MSAxMSIgY29udGVudD0iJmx0O214ZmlsZSBob3N0PSZxdW90O2FwcC5kaWFncmFtcy5uZXQmcXVvdDsgbW9kaWZpZWQ9JnF1b3Q7MjAyMy0wNC0wNlQxMzoxODoyOS41MzVaJnF1b3Q7IGFnZW50PSZxdW90O01vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQ7IHJ2OjEwOS4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzExMS4wJnF1b3Q7IGV0YWc9JnF1b3Q7LTFMRmx3T3BMeERCc2hmZjZQVXImcXVvdDsgdmVyc2lvbj0mcXVvdDsyMS4xLjQmcXVvdDsgdHlwZT0mcXVvdDtkZXZpY2UmcXVvdDsmZ3Q7Jmx0O2RpYWdyYW0gaWQ9JnF1b3Q7dFRhaF9CNEhVbzdyYnFZU3lJS0QmcXVvdDsgbmFtZT0mcXVvdDtQYWdlLTEmcXVvdDsmZ3Q7alpUTGJ1TXdERVcveHNzQ2ZyUjVMRHVlVG1aVElFQ0s2VnBqTWJaUVdUUmtPWW43OVVOSGxCOU5pODdHRUkrcFMvcFNjcFRsOVdWblJWTTlvd1FkcGJHOFJOblBLRTN2Tnh0NkRxRDNZQjAvZUZCYUpUMUtKbkJRNzhBd1p0b3BDZTBpMFNGcXA1b2xMTkFZS055Q0NXdnh2RXc3b2w1V2JVUUpOK0JRQ0gxTFg1VjBsYWViZEQzeDM2REtLbFJPVmx2L3BoWWhtYitrcllURTh3eGxUMUdXVzBUblYvVWxCejE0RjN6eCszNTk4WFpzeklKeC83TmgyLys1ankrdzY1UDgzYjNJbDZwZDVYZkpsdWR6RXJyalQrWjJYUjg4QUNNZkJ5c3BNbWdJL3FoY3JTbEthR214TXhLR0dqRkZyYlA0QmpscXRFUWtIRVduM2NpRGc4bVZDT3Q0M2l1S0tTekI3Y0dxR2h6WVF5TUtaVXFXUFNxdGd5aTNRSFkydzE2dHpCdUZvUDllR3p5QmRZckdSK2djcXNVKzNicy9CTGZXc1pzZ0Y2ZUJqZHdCVWsrMnA0VHpkQVllZUs3VmJQeUJXZERDcWRQeURBaytpdVVvTjFiWW82Sk8wcGh2ellabCtNNk1seUVvdE5qWkFualRmT1FmZEpMVk4wSnMra2NobXJib1oybk5rTkIrM1crU2ZsNkg1V2poRlVNMHMzUkMxK01hd3VsYStQVHAzNUk5L1FNPSZsdDsvZGlhZ3JhbSZndDsmbHQ7L214ZmlsZSZndDsiPjxkZWZzLz48Zz48cGF0aCBkPSJNIDAgMCBMIDQwIDAgTCA4MCAwIE0gODAgMTAgTCA0MCAxMCBMIDAgMTAgTSA4MCAxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2IoMCwgMCwgMCkiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQyIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PC9nPjwvc3ZnPg=='; let icon = map; gc.rel_graphic_line('black', 0.005, false, 0, 0, 0); }",
-      "coordinates_2d": null,
-      "relative_coordinate_3d": null,
-      "absolute_coordinate_3d": null,
-      "uuid_metaobject": "bc78a4a5-7541-4ba2-976f-7ec8199242d4",
-      "uuid_class": "bc78a4a5-7541-4ba2-976f-7ec8199242d4",
+      "uuid_metaobject": "a79ae622-575d-47f8-962d-86de9fc38c7c",
+      "uuid_class": "a79ae622-575d-47f8-962d-86de9fc38c7c",
       "uuid_class_bendpoint": "568e939b-ba82-44b3-b8b0-c96a20ac0509",
       "bendpoints": "568e939b-ba82-44b3-b8b0-c96a20ac0509"
     }
